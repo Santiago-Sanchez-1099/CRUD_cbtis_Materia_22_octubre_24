@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion materias {% endblock %}
+
+{% block cuerpo %}
+    <h1> Gestionar Materias   Santiago Sánchez</h1>
+    {% for m in lasmaterias %}
+    
+    <li> {{m.codigo}}.-.-.-. {{m.nombre}}.-.-.-. {{m.creditos}}</li>
+
+    {% endfor %}
+
+    
+{% endblock %}
